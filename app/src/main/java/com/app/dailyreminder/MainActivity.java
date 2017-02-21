@@ -1,6 +1,13 @@
 package com.app.dailyreminder;
 
+import android.app.AlarmManager;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Intent;
 import android.content.res.AssetManager;
+import android.icu.util.Calendar;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.ShareActionProvider;
@@ -21,8 +28,9 @@ public class MainActivity extends AppCompatActivity {
     private TextView mTextView;
     private Button mButton;
     private String STATE_DR;
-    private static String TEXT_VALUE = "";
+    public static String TEXT_VALUE = "";
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +45,18 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+        NotificationManager notificationManager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
+
+        Calendar calendarDaily = Calendar.getInstance();
+        calendarDaily.set(Calendar.HOUR_OF_DAY, 9);
+        calendarDaily.set(Calendar.MINUTE, 0);
+        calendarDaily.set(Calendar.SECOND, 0);
+
+        Intent intentDaily = new Intent(MainActivity.this, AlarmReceiver.class);
+        PendingIntent pendingIntentDaily = PendingIntent.getBroadcast(MainActivity.this, 0,intentDaily, 0);
+        AlarmManager daily = (AlarmManager) MainActivity.this.getSystemService(MainActivity.this.ALARM_SERVICE);
+        daily.setRepeating(AlarmManager.RTC_WAKEUP, calendarDaily.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntentDaily);
 
 //        mButton.setOnClickListener(new View.OnClickListener() {
 //            @Override

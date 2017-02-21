@@ -3,15 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="D:\Programming\DailyReminder\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="D:\Programming\DailyReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_28b5ffd03948010f3b75d49c0e76846cddb90ebf\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="D:\Programming\DailyReminder\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -25,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="384b951a749480738c0b1af8208edba693bc10e4">
+        sha1="ca44bb01903ec2e3d81824436836ee8d99c9565b">
         <dex dex="D:\Programming\DailyReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_00f6b396a518a2ee6b5bb18fc205a9a8bfc449b5\classes.dex" />
     </item>
     <item
@@ -48,6 +39,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Sohaib shahid\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="D:\Programming\DailyReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_9c8801952a6dda233ad32596e519024068b9f37a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Programming\DailyReminder\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Programming\DailyReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_28b5ffd03948010f3b75d49c0e76846cddb90ebf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="D:\Programming\DailyReminder\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -63,15 +72,6 @@
         revision="25.0.2"
         sha1="aee64634871d88a419d59eb743c1258a60f19700">
         <dex dex="D:\Programming\DailyReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_edf8eb2951e3dfb91f93b9c38758ca75ce881b50\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Sohaib shahid\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="D:\Programming\DailyReminder\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_9c8801952a6dda233ad32596e519024068b9f37a\classes.dex" />
     </item>
     <item
         is-multidex="true"
