@@ -36,6 +36,7 @@ public class AlarmReceiver extends BroadcastReceiver {
                 .setContentText(MainActivity.TEXT_VALUE)
                 .setContentIntent(pendingIntent)
                 .setVibrate(new long[]{1000})
+                .setStyle(new NotificationCompat.BigTextStyle().bigText(MainActivity.TEXT_VALUE))
                 .build();
 
         notificationManager.notify(0,mNotifyBuilder);

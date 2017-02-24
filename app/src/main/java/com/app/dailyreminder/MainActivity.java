@@ -94,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
         mTextView.setText(STATE_DR);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected void onStart() {
         super.onStart();
