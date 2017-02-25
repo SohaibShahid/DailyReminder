@@ -31,7 +31,7 @@ public class AlarmReceiver extends BroadcastReceiver {
                 notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
         Notification mNotifyBuilder = new NotificationCompat.Builder(
-                context).setSmallIcon(R.mipmap.ic_launcher)
+                context).setSmallIcon(R.drawable.ic_stat_logo)
                 .setContentTitle("Daily Reminder")
                 .setContentText(MainActivity.TEXT_VALUE)
                 .setContentIntent(pendingIntent)
