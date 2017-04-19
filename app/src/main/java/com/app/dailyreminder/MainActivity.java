@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        NotificationManager notificationManager = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
+        NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 
         Calendar calendarDaily = Calendar.getInstance();
         calendarDaily.set(Calendar.HOUR_OF_DAY, 9);
@@ -54,28 +54,9 @@ public class MainActivity extends AppCompatActivity {
         calendarDaily.set(Calendar.SECOND, 0);
 
         Intent intentDaily = new Intent(MainActivity.this, AlarmReceiver.class);
-        PendingIntent pendingIntentDaily = PendingIntent.getBroadcast(MainActivity.this, 0,intentDaily, 0);
+        PendingIntent pendingIntentDaily = PendingIntent.getBroadcast(MainActivity.this, 0, intentDaily, 0);
         AlarmManager daily = (AlarmManager) MainActivity.this.getSystemService(MainActivity.this.ALARM_SERVICE);
         daily.setRepeating(AlarmManager.RTC_WAKEUP, calendarDaily.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntentDaily);
-
-//        mButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                //                    InputStreamReader textReader = getQuoteReader();
-////
-////                    final int totalLines = getFileLineCount(textReader);
-////                    int lineToFetch = 0;
-////                    String quote = null;
-////
-////                    // We want to get the quote at the following line number
-////                    lineToFetch = getRandomLineNumber(totalLines);
-////
-////                    quote = getRandomQuote(lineToFetch);
-////
-////                    displayQuote(quote);
-//                Toast.makeText(MainActivity.this, "herr", Toast.LENGTH_SHORT).show();
-//            }
-//        });
     }
 
     //Code to save state on orientation change
